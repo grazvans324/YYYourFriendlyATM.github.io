@@ -210,15 +210,21 @@ a:visited {
   margin-bottom: -120px;
   margin-top: 70px;
   font-size: 60px;
-  animation: fade 1s ease-in 1s;
+  animation: fadeIn 1s ;
   pointer-events: none;
   opacity: 0;
 }
-@keyframes fade {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
-  100% {
+    25% {
+    opacity: 0.25;
+  } 50% {
+    opacity: 0.5;
+  } 75% {
+    opacity: 0.75;
+  } 100% {
     opacity: 1;
   }
 }
